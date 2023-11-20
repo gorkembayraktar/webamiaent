@@ -1,0 +1,27 @@
+{
+  "name": "aent",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "action": "node common/actions.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@inquirer/checkbox": "^1.5.0",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "figlet": "^1.7.0",
+    "form-data": "^4.0.0",
+    "glob": "^10.3.10",
+    "inquirer": "^9.2.12",
+    "jsdom": "^22.1.0",
+    "moment": "^2.29.4",
+    "slugify": "^1.6.6",
+    "xlsx": "^0.18.5"
+  }
+}
