@@ -270,9 +270,9 @@ async function SelectCategory(){
         checked: rconfig.selectedCategories.some(s => s.value == value)
     }));
 
-    //ui.updateBottomBar("Kategori toplam kayıtlar hesaplanıyor..");
-    //const aent = new AENT(settings.login.username);
-    /*
+    ui.updateBottomBar("Kategori toplam kayıtlar hesaplanıyor..");
+    const aent = new AENT(settings.login.username);
+    
     for(let i = 0; i < cate.length; i ++){
         const c = cate[i];
         const result = await aent.getTotalCount(
@@ -281,7 +281,7 @@ async function SelectCategory(){
         c.count = result ? result.total : -1;
         ui.updateBottomBar(`Kategori toplam kayıtlar hesaplanıyor..(${ ((i + 1) / cate.length ) * 100 }%)`);
     }
-    */
+    
     const answer = await checkbox({
         message: 'Kategorileri Seçin',
         pageSize: 10,
