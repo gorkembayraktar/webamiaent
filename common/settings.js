@@ -43,8 +43,8 @@ export const settings = {
         "Collectibles": "ACO",
     },
     login: {
-        username: process.env.AENT_USERNAME,
-        password: process.env.AENT_PASSWORD,
+        username: process.env.AENT_USERNAME ?? "",
+        password: process.env.AENT_PASSWORD ?? "",
         ship: process.env.AENT_SHIP ?? '',
         consumerMode: process.env.AENT_CONSUMERMODE ?? false
     }

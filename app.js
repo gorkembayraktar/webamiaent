@@ -80,6 +80,12 @@ async function Homepage(){
 }
 
 async function Collect(){
+
+    if(settings.login.username == "" || settings.login.password == ""){
+        console.log("Kullanıcı adı ve şifre tanımlamasını .env dosyasında yapınız.");
+        return await Homepage();
+    }
+
     
     const info = await config.info();
     const isContunie = info && info.continue && !info.completed;
@@ -121,6 +127,9 @@ async function Cont(){
     }
 
     const ui = new inquirer.ui.BottomBar();
+ 
+
+
     const isLogin = await login(
         settings.login.username, 
         settings.login.password,
