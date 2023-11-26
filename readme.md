@@ -1,9 +1,10 @@
 ## Data UPC Scraper
 Kategorilere göre veri topla ve .txt, .xlsx formatında çıktı oluştur.
 
-.env dosyasında
 
-#Oturum Bilgileri
+
+### Oturum Bilgileri
+.env dosyasında
 ``` 
 AENT_USERNAME=
 AENT_PASSWORD=
